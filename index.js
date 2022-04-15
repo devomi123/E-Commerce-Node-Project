@@ -10,8 +10,7 @@ app.use(express.static("assets"));
 app.use(bodyparser.json({limit:'50mb'}));
 app.use(bodyparser.urlencoded({limit:'50mb', extended: true}));
 
-mongooes.connect("mongodb+srv://omkar:omkar123@cluster0.vipls.mongodb.net/e-commerce
-");
+mongooes.connect("mongodb+srv://omkar:omkar123@cluster0.vipls.mongodb.net/e-commerce");
 const db = mongooes.connection;
 db.on("error", error => console.log(error));
 db.on("open", error => console.log("connection Established"));
@@ -44,7 +43,7 @@ app.use("/order",require("./routes/order"));
 
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3100;
 app.listen(PORT,(err)=>{
   console.log("Node Server Started");
 })
