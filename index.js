@@ -10,7 +10,7 @@ app.use(express.static("assets"));
 app.use(bodyparser.json({limit:'50mb'}));
 app.use(bodyparser.urlencoded({limit:'50mb', extended: true}));
 
-mongooes.connect("mongodb://localhost:27017/e-commerce");
+mongooes.connect("mongodb+srv://omkar:Omkar@@123@cluster0.vipls.mongodb.net/test");
 const db = mongooes.connection;
 db.on("error", error => console.log(error));
 db.on("open", error => console.log("connection Established"));
