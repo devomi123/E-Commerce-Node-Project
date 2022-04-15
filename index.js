@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 
 });
 app.get("/", function (req, res) {
-  res.send("Welcome To Resume Building");
+  res.send("Welcome to E-commerce");
   res.end();
 });
 
